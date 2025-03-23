@@ -71,6 +71,27 @@ Our AI system is designed to:
 
 ---
 
+## 📂 Project Structure
+```
+├── dataset/
+│   ├── BDD100K/
+│   ├── Foggy_Cityscapes/
+│   └── augmented_data/
+├── models/
+│   └── yolo_trained_model.h5
+├── preprocessing/
+│   ├── dehaze.py
+│   ├── rain_removal.py
+│   └── contrast_enhancement.py
+├── evaluation/
+│   └── evaluation_metrics.py
+├── results/
+│   ├── performance_plots.png
+│   └── sample_detections/
+├── README.md
+└── requirements.txt
+```
+
 ---
 
 ## 🛠 Tech Stack
@@ -81,9 +102,34 @@ Our AI system is designed to:
 - Matplotlib, NumPy, Pandas
 
 ---
-🤝 Acknowledgments
-BDD100K Dataset
 
-Foggy Cityscapes Dataset
+## 📥 Installation
+```bash
+git clone https://github.com/yourusername/ai-object-detection-fog-rain.git
+cd ai-object-detection-fog-rain
+pip install -r requirements.txt
+```
 
-YOLOv5 Community
+## ✅ Run the Model
+```bash
+python train_yolo.py
+python run_detection.py --image_path ./test_images/sample_foggy.jpg
+```
+
+---
+
+## 📃 License
+This project is licensed under the **MIT License**.
+
+---
+
+## 🤝 Acknowledgments
+- **BDD100K Dataset**
+- **Foggy Cityscapes Dataset**
+- **YOLOv5 Community**
+
+---
+
+## 📧 Contact
+For queries, feel free to reach out:  
+**your.email@example.com**
